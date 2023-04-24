@@ -67,3 +67,31 @@
     flex: 1;
   }
 }
+
+
+
+
+
+
+.title-contents {
+  width: 100%;
+}
+
+.list-pict {
+  max-width: 960px;
+}
+
+
+
+.lists-right {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.lists-right li {
+  margin-left: 10px;
+}
+
