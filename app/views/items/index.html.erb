@@ -53,12 +53,23 @@
 </header>
 
 <main>
-  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-    <div class="col-md-5 p-lg-5 mx-auto my-5">
-      <h1 class="display-4 fw-normal">Let's experience "Itadakimasu"</h1>
+  
+
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+  <div class="col-md-5 p-lg-5 mx-auto my-5">
+    <h1 class="display-4 fw-normal">Let's experience "Itadakimasu"</h1>
+    <div class="my-3">
       <p class="lead fw-normal">Home visit connected with the world.</p>
-      <a class="btn btn-outline-secondary" href="#">RESERVE</a>
+      <%= link_to(new_item_path, class: 'reserve-btn') do %>
+        <span class='reserve-btn-text'>RESERVE</span>
+      <% end %>
     </div>
+  </div>
+</div>
+
+
+
+
     <div class="product-device shadow-sm d-none d-md-block"></div>
     <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
   </div>
@@ -188,8 +199,73 @@
 </footer>
 
 
+
+
+
+
+
+
+
+<% if @items.present? %>  
+      <% @items.each do |item| %>
+      <li class='list'>
+        <%= link_to item_path(item) do %>
+        <div class='item-img-content'>
+          <%= image_tag item.image, class: "item-img" %> 
+        
+          <% end %>  
+
+        </div>
+         <div class='item-info'>
+          <h3 class='item-name'>
+            <%= item.recipes %>
+             <% end %> 
+          <%# </h3>
+          <div class='item-price'>
+            <span><%= item.price円<br><%= item.fee.name</span> 
+            <div class='star-btn'>
+              <%= image_tag "star.png", class:"star-icon" %>
+              <%# <span class='star-count'>0</span> %>
+            <%# </div> 
+          </div>  
+        </div>
+        <% end %>  
+      </li>
+       <% end %>
+        <%# <% else %>   
+      <%# <li class='list'>
+        <%= link_to '#' do %> 
+        <%# <%= image_tag "https://tech-master.s3.amazonaws.com/uploads/curriculums/images/Rails1-4/sample.jpg", class: "item-img" %>
+        <%# <div class='item-info'>
+          <h3 class='item-name'>
+            商品を出品してね！ 
+          </h3>
+          <div class='item-price'>
+            <span>99999999円<br>(税込み)</span>
+            <div class='star-btn'>  %>
+              <%# <%= image_tag "star.png", class:"star-icon" %> 
+              <%# <span class='star-count'>0</span>
+            </div>
+          </div>
+        </div>
+        <% end %>
+      <%# </li>
+      <% end %>
+    <%# </ul>
+  </div> 
+  <%# /商品一覧 %>
+<%# </div>    %>
+
+
+
+
+
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+<%= link_to(new_item_path, class: 'purchase-btn') do %>
+  <span class='purchase-btn-text'>Submit</span>
+  <%= image_tag 'icon_camera.png' , size: '185x50' ,class: "purchase-btn-icon" %>
+<% end %>
 
       
   </body>
-</html>

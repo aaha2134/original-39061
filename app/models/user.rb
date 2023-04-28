@@ -5,8 +5,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   validates :nickname, presence: true
   validates :password, format: { with: /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i }
-  validates :first_name, presence: true, format: { with: /\A[ぁ-んァ-ヶ一-龥々ー]+\z/, message: 'は全角のみで入力してください' }
-  validates :last_name, presence: true, format: { with: /\A[ぁ-んァ-ヶ一-龥々ー]+\z/, message: 'は全角のみで入力してください' }
+  validates :first_name, presence: true, format:{ with: /\A[a-zA-Z]+\z/, message: 'は半角英字のみで入力してください' }
+  validates :last_name, presence: true, format: { with: /\A[a-zA-Z]+\z/, message: 'は半角英字のみで入力してください' }
 
 
   
