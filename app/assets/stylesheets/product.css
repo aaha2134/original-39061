@@ -13,8 +13,37 @@
 }
 .site-header a {
   color: #8e8e8e;
-  transition: color .15s ease-in-out;
+  transition: color .15s ease-in-out; 
 }
+
+.reserve-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 100px;
+  border-radius: 5px;
+  font-size: 40px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.reserve-btn:hover {
+  background-color: #0069d9;
+  color: #fff;
+  text-decoration: none;
+  
+}
+
+.reserve-btn-text {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+
+
+
 .site-header a:hover {
   color: #fff;
   text-decoration: none;
@@ -95,3 +124,29 @@
   margin-left: 10px;
 }
 
+
+
+
+
+.purchase-btn {
+  width: 120px;
+  background: #3ccace;
+  text-align: center;
+  border-radius: 4%;
+  bottom: 32px;
+  right: 32px;
+  position: fixed;
+  padding: 15px
+}
+
+.purchase-btn-text {
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  text-decoration: none;
+  margin-bottom: 5px
+}
+
+.purchase-btn-icon {
+  width: 60%
+}
