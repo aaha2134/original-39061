@@ -60,7 +60,7 @@
     <h1 class="display-4 fw-normal">Let's experience "Itadakimasu"</h1>
     <div class="my-3">
       <p class="lead fw-normal">Home visit connected with the world.</p>
-      <%= link_to(new_item_path, class: 'reserve-btn') do %>
+      <%= link_to item_path(@items), class: 'reserve-btn' do %>
         <span class='reserve-btn-text'>RESERVE</span>
       <% end %>
     </div>
