@@ -16,6 +16,7 @@
 - has_many :reserves
 
 
+
 ## items テーブル
 
 | Column            | Type       | Options     |
