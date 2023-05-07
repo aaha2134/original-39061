@@ -4,10 +4,11 @@
 
 
 
+
 <div class='form-wrap'>
   <div class='form-header'>
     <h1 class='form-header-text'>
-      会員情報入力
+      Member Information 
     </h1>
   </div>
 
@@ -15,45 +16,45 @@
 
   <div class="form-group">
     <div class='form-text-wrap'>
-      <label class="form-text">ニックネーム</label>
-      <span class="indispensable">必須</span>
+      <label class="form-text">nickname</label>
+      <span class="indispensable">required</span>
     </div>
     <%= f.text_area :nickname, class:"input-default", id:"nickname", placeholder:"例) minsyoku太郎", maxlength:"40" %>
   </div>
   <div class="form-group">
     <div class='form-text-wrap'>
-      <label class="form-text">メールアドレス</label>
-      <span class="indispensable">必須</span>
+      <label class="form-text">Mail address</label>
+      <span class="indispensable">required</span>
     </div>
     <%= f.email_field :email, class:"input-default", id:"email", placeholder:"PC・携帯どちらでも可", autofocus: true %>
   </div>
   <div class="form-group">
     <div class='form-text-wrap'>
-      <label class="form-text">パスワード</label>
-      <span class="indispensable">必須</span>
+      <label class="form-text">password</label>
+      <span class="indispensable">required</span>
     </div>
     <%= f.password_field :password, class:"input-default", id:"password", placeholder:"6文字以上の半角英数字" %>
-    <p class='info-text'>※英字と数字の両方を含めて設定してください</p>
+    <p class='info-text'>※Please include both alphabetic and numeric characters</p>
   </div>
   <div class="form-group">
     <div class='form-text-wrap'>
-      <label class="form-text">パスワード(確認)</label>
-      <span class="indispensable">必須</span>
+      <label class="form-text">password(confirmation)</label>
+      <span class="indispensable">required</span>
     </div>
-    <%= f.password_field :password_confirmation, class:"input-default", id:"password-confirmation", placeholder:"同じパスワードを入力して下さい" %>
+    <%= f.password_field :password_confirmation, class:"input-default", id:"password-confirmation", placeholder:"Please enter the same password." %>
   </div>
   <div class="form-group">
     <p class='form-info-header'>
-      本人確認
+      identification (of a person)
     </p>
     <p class='form-info-text'>
-      安心・安全にご利用いただくために、お客さまの本人情報の登録にご協力ください。他のお客さまに公開されることはありません。
+      For your safety and security, please cooperate in registering your personal information. Your information will not be disclosed to other customers.
     </p>
   </div>
   <div class="form-group">
     <div class='form-text-wrap'>
       <label class="form-text">Your name</label>
-      <span class="indispensable">必須</span>
+      <span class="indispensable">required</span>
     </div>
     <div class='input-name-wrap'>
       <%= f.text_area :last_name, class:"input-name", id:"last-name", placeholder:"ex) Yamada" %>
@@ -90,19 +91,18 @@
                     date_separator: '%s'),
                   "<p> 年 </p>", "<p> 月 </p>") + "<p> 日 </p>" %> 
     <%# </div> %>
-    <p class='info-text'>※ 本人情報は正しく入力してください。会員登録後、修正するにはお時間を頂く場合があります。</p>
+    <p class='info-text'>※ Please enter your personal information correctly. It may take some time to correct your information after registration.</p>
   </div>
   <div class="form-group">
     <h2 class='form-bottom-text'>
-      「会員登録」のボタンを押すことにより、
-      <span>利用規約</span>
-      <br>に同意したものとみなします
+      By clicking on the "Register" button, you agree to the Terms of Use
+      
     </h2>
   </div>
   <div class='register-btn'>
-    <%= f.submit "会員登録" ,class:"register-red-btn" %>
+    <%= f.submit "Registration" ,class:"register-red-btn" %>
   </div>
-  <p class='register-info'>本人情報の登録について</p>
+  <p class='register-info'>Registration of your personal information</p>
 </div>
 <% end %>
 
