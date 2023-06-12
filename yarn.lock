@@ -4421,6 +4421,11 @@ jest-worker@^25.4.0:
     merge-stream "^2.0.0"
     supports-color "^7.0.0"
 
+jquery@^3.6.0:
+  version "3.6.4"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.4.tgz#ba065c188142100be4833699852bf7c24dc0252f"
+  integrity sha512-v28EW9DWDFpzcD9O5iyJXg3R3+q+mET5JhnjJzQUZMHOv67bpSIHq81GEYpPNZHG+XXHsfSme3nxp/hndKEcsQ==
+
 js-base64@^2.1.8:
   version "2.6.4"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.6.4.tgz#f4e686c5de1ea1f867dbcad3d46d969428df98c4"
@@ -6772,6 +6777,11 @@ schema-utils@^4.0.0:
     ajv "^8.9.0"
     ajv-formats "^2.1.1"
     ajv-keywords "^5.1.0"
+
+scroll@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/scroll/-/scroll-3.0.1.tgz#d5afb59fb3592ee3df31c89743e78b39e4cd8a26"
+  integrity sha512-pz7y517OVls1maEzlirKO5nPYle9AXsFzTMNJrRGmT951mzpIBy7sNHOg5o/0MQd/NqliCiWnAi0kZneMPFLcg==
 
 scss-tokenizer@^0.2.3:
   version "0.2.3"
