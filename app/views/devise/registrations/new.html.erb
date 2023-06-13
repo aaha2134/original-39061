@@ -19,21 +19,21 @@
       <label class="form-text">nickname</label>
       <span class="indispensable">required</span>
     </div>
-    <%= f.text_area :nickname, class:"input-default", id:"nickname", placeholder:"例) minsyoku太郎", maxlength:"40" %>
+    <%= f.text_area :nickname, class:"input-default", id:"nickname", placeholder:"例) minsyoku taro", maxlength:"40" %>
   </div>
   <div class="form-group">
     <div class='form-text-wrap'>
       <label class="form-text">Mail address</label>
       <span class="indispensable">required</span>
     </div>
-    <%= f.email_field :email, class:"input-default", id:"email", placeholder:"PC・携帯どちらでも可", autofocus: true %>
+    <%= f.email_field :email, class:"input-default", id:"email", placeholder:"PC・mobile phone possible", autofocus: true %>
   </div>
   <div class="form-group">
     <div class='form-text-wrap'>
       <label class="form-text">password</label>
       <span class="indispensable">required</span>
     </div>
-    <%= f.password_field :password, class:"input-default", id:"password", placeholder:"6文字以上の半角英数字" %>
+    <%= f.password_field :password, class:"input-default", id:"password", placeholder:"6 or more single-byte alphanumeric characters" %>
     <p class='info-text'>※Please include both alphabetic and numeric characters</p>
   </div>
   <div class="form-group">
